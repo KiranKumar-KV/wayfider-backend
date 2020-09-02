@@ -1,0 +1,325 @@
+select *
+from floor f,category c,shops sh,store st,tbl_shop_category sc,tbl_store_shop ss
+where f.floor_id = st.floor_id
+and sh.shop_id = sc.shop_id
+and c.category_id = sc.category_id
+and sh.shop_id = ss.shop_id
+and st.store_id = ss.store_id;
+
+
+
+
+[
+    {
+        "floor_id": 19,
+        "floor_name": "upper ground",
+        "alias": "UG",
+        "atm": true,
+        "wheelchair": true,
+        "babycare": true,
+        "washroom": true,
+        "mall_id": 1,
+        "created_at": "2019-12-06T10:16:19.000Z",
+        "updated_at": "2019-12-06T10:16:19.000Z",
+        "status": true,
+        "store_list": [
+            {
+                "store_id": 5,
+                "store_number": 201,
+                "floor_id": 19,
+                "status": true,
+                "created_at": "2019-12-07T12:16:49",
+                "updated_at": "2019-12-07T12:16:49",
+                "shop_list": [
+                    {
+                        "shop_id": 14,
+                        "shop_name": "woodlands",
+                        "contact_number": 9989898899,
+                        "created_at": "2019-12-10T14:22:38",
+                        "updated_at": "2019-12-10T14:22:38",
+                        "status": true,
+                        "image_list": [
+                            {
+                                "image_id": 161,
+                                "image_url": "shoplogo-zzldr3l9.png",
+                                "image_type_id": 14,
+                                "created_at": "2019-12-10T14:22:38",
+                                "updated_at": "2019-12-10T14:22:38",
+                                "status": true,
+                                "image_type": "shop-logo"
+                            },
+                            {
+                                "image_id": 162,
+                                "image_url": "shopimage-zzldr3l9.png",
+                                "image_type_id": 14,
+                                "created_at": "2019-12-10T14:22:38",
+                                "updated_at": "2019-12-10T14:22:38",
+                                "status": true,
+                                "image_type": "shop-image"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "store_id": 6,
+                "store_number": 202,
+                "floor_id": 19,
+                "status": true,
+                "created_at": "2019-12-07T12:17:41",
+                "updated_at": "2019-12-07T12:17:41",
+                "shop_list": [
+                    {
+                        "shop_id": 18,
+                        "shop_name": "bata",
+                        "contact_number": 456585254,
+                        "created_at": "2019-12-19T10:26:13",
+                        "updated_at": "2019-12-19T10:26:13",
+                        "status": true,
+                        "image_list": [
+                            {
+                                "image_id": 174,
+                                "image_url": "shoplogo-983x7nst.png",
+                                "image_type_id": 18,
+                                "created_at": "2019-12-19T10:26:13",
+                                "updated_at": "2019-12-19T10:26:13",
+                                "status": true,
+                                "image_type": "shop-logo"
+                            },
+                            {
+                                "image_id": 175,
+                                "image_url": "shopimage-983x7nst.png",
+                                "image_type_id": 18,
+                                "created_at": "2019-12-19T10:26:13",
+                                "updated_at": "2019-12-19T10:26:13",
+                                "status": true,
+                                "image_type": "shop-image"
+                            }
+                        ]
+                    },
+                    {
+                        "shop_id": 14,
+                        "shop_name": "woodlands",
+                        "contact_number": 9989898899,
+                        "created_at": "2019-12-10T14:22:38",
+                        "updated_at": "2019-12-10T14:22:38",
+                        "status": true,
+                        "image_list": [
+                            {
+                                "image_id": 161,
+                                "image_url": "shoplogo-zzldr3l9.png",
+                                "image_type_id": 14,
+                                "created_at": "2019-12-10T14:22:38",
+                                "updated_at": "2019-12-10T14:22:38",
+                                "status": true,
+                                "image_type": "shop-logo"
+                            },
+                            {
+                                "image_id": 162,
+                                "image_url": "shopimage-zzldr3l9.png",
+                                "image_type_id": 14,
+                                "created_at": "2019-12-10T14:22:38",
+                                "updated_at": "2019-12-10T14:22:38",
+                                "status": true,
+                                "image_type": "shop-image"
+                            }
+                        ]
+                    },
+                    {
+                        "shop_id": 16,
+                        "shop_name": "reliance digital",
+                        "contact_number": 4565852545,
+                        "created_at": "2019-12-11T11:36:03",
+                        "updated_at": "2019-12-11T11:36:03",
+                        "status": true,
+                        "image_list": [
+                            {
+                                "image_id": 163,
+                                "image_url": "shoplogo-typvlvom.png",
+                                "image_type_id": 16,
+                                "created_at": "2019-12-11T11:36:03",
+                                "updated_at": "2019-12-11T11:36:03",
+                                "status": true,
+                                "image_type": "shop-logo"
+                            },
+                            {
+                                "image_id": 164,
+                                "image_url": "shopimage-typvlvom.png",
+                                "image_type_id": 16,
+                                "created_at": "2019-12-11T11:36:03",
+                                "updated_at": "2019-12-11T11:36:03",
+                                "status": true,
+                                "image_type": "shop-image"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "floor_id": 18,
+        "floor_name": "Lower ground",
+        "alias": "LG",
+        "atm": true,
+        "wheelchair": true,
+        "babycare": true,
+        "washroom": true,
+        "mall_id": 1,
+        "created_at": "2019-11-27T10:27:36.000Z",
+        "updated_at": "2019-12-06T10:06:20.000Z",
+        "status": true,
+        "store_list": [
+            {
+                "store_id": 4,
+                "store_number": 101,
+                "floor_id": 18,
+                "status": true,
+                "created_at": "2019-11-28T12:35:00",
+                "updated_at": "2019-12-07T12:07:31",
+                "shop_list": [
+                    {
+                        "shop_id": 18,
+                        "shop_name": "bata",
+                        "contact_number": 456585254,
+                        "created_at": "2019-12-19T10:26:13",
+                        "updated_at": "2019-12-19T10:26:13",
+                        "status": true,
+                        "image_list": [
+                            {
+                                "image_id": 174,
+                                "image_url": "shoplogo-983x7nst.png",
+                                "image_type_id": 18,
+                                "created_at": "2019-12-19T10:26:13",
+                                "updated_at": "2019-12-19T10:26:13",
+                                "status": true,
+                                "image_type": "shop-logo"
+                            },
+                            {
+                                "image_id": 175,
+                                "image_url": "shopimage-983x7nst.png",
+                                "image_type_id": 18,
+                                "created_at": "2019-12-19T10:26:13",
+                                "updated_at": "2019-12-19T10:26:13",
+                                "status": true,
+                                "image_type": "shop-image"
+                            }
+                        ]
+                    },
+                    {
+                        "shop_id": 14,
+                        "shop_name": "woodlands",
+                        "contact_number": 9989898899,
+                        "created_at": "2019-12-10T14:22:38",
+                        "updated_at": "2019-12-10T14:22:38",
+                        "status": true,
+                        "image_list": [
+                            {
+                                "image_id": 161,
+                                "image_url": "shoplogo-zzldr3l9.png",
+                                "image_type_id": 14,
+                                "created_at": "2019-12-10T14:22:38",
+                                "updated_at": "2019-12-10T14:22:38",
+                                "status": true,
+                                "image_type": "shop-logo"
+                            },
+                            {
+                                "image_id": 162,
+                                "image_url": "shopimage-zzldr3l9.png",
+                                "image_type_id": 14,
+                                "created_at": "2019-12-10T14:22:38",
+                                "updated_at": "2019-12-10T14:22:38",
+                                "status": true,
+                                "image_type": "shop-image"
+                            }
+                        ]
+                    },
+                    {
+                        "shop_id": 13,
+                        "shop_name": "puma",
+                        "contact_number": 9989898899,
+                        "created_at": "2019-12-06T18:09:39",
+                        "updated_at": "2019-12-06T18:09:39",
+                        "status": true,
+                        "image_list": [
+                            {
+                                "image_id": 99,
+                                "image_url": "shoplogo-czw04i2o.png",
+                                "image_type_id": 13,
+                                "created_at": "2019-12-06T18:09:39",
+                                "updated_at": "2019-12-06T18:09:39",
+                                "status": true,
+                                "image_type": "shop-logo"
+                            },
+                            {
+                                "image_id": 100,
+                                "image_url": "shopimage-czw04i2o.png",
+                                "image_type_id": 13,
+                                "created_at": "2019-12-06T18:09:39",
+                                "updated_at": "2019-12-06T18:09:39",
+                                "status": true,
+                                "image_type": "shop-image"
+                            }
+                        ]
+                    },
+                    {
+                        "shop_id": 16,
+                        "shop_name": "reliance digital",
+                        "contact_number": 4565852545,
+                        "created_at": "2019-12-11T11:36:03",
+                        "updated_at": "2019-12-11T11:36:03",
+                        "status": true,
+                        "image_list": [
+                            {
+                                "image_id": 163,
+                                "image_url": "shoplogo-typvlvom.png",
+                                "image_type_id": 16,
+                                "created_at": "2019-12-11T11:36:03",
+                                "updated_at": "2019-12-11T11:36:03",
+                                "status": true,
+                                "image_type": "shop-logo"
+                            },
+                            {
+                                "image_id": 164,
+                                "image_url": "shopimage-typvlvom.png",
+                                "image_type_id": 16,
+                                "created_at": "2019-12-11T11:36:03",
+                                "updated_at": "2019-12-11T11:36:03",
+                                "status": true,
+                                "image_type": "shop-image"
+                            }
+                        ]
+                    },
+                    {
+                        "shop_id": 17,
+                        "shop_name": "bata",
+                        "contact_number": 7898654532,
+                        "created_at": "2019-12-11T11:40:10",
+                        "updated_at": "2019-12-11T12:58:14",
+                        "status": true,
+                        "image_list": [
+                            {
+                                "image_id": 167,
+                                "image_url": "shoplogo-43jmlqjk.png",
+                                "image_type_id": 17,
+                                "created_at": "2019-12-11T11:50:11",
+                                "updated_at": "2019-12-11T11:50:11",
+                                "status": true,
+                                "image_type": "shop-logo"
+                            },
+                            {
+                                "image_id": 168,
+                                "image_url": "shopimage-801tx89d.png",
+                                "image_type_id": 17,
+                                "created_at": "2019-12-11T11:57:53",
+                                "updated_at": "2019-12-11T11:57:53",
+                                "status": true,
+                                "image_type": "shop-image"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

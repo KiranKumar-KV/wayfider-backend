@@ -1,0 +1,1061 @@
+{
+    "mall": [
+        {
+            "mall_id": 1,
+            "mall_name": "forum-fiza",
+            "location": "mangalore",
+            "status": true,
+            "image_list": [
+                {
+                    "image_id": 91,
+                    "image_url": "mall-logo-y61moqb.png",
+                    "image_type_id": 1,
+                    "created_at": "2019-12-06T13:13:47",
+                    "updated_at": "2019-12-06T13:13:47",
+                    "status": true,
+                    "image_type": "mall-logo"
+                }
+            ]
+        }
+    ],
+    "mall_info": [
+        {
+            "mall_info_id": 1,
+            "helptext": "helpdesk",
+            "phone": "9876543210",
+            "email": "helpdesk@gmail.com",
+            "mall_id": 1,
+            "status": true,
+            "mall_name": "forum-fiza"
+        },
+        {
+            "mall_info_id": 3,
+            "helptext": "child-safety",
+            "phone": "9876543210",
+            "email": "helpdesk@gmail.com",
+            "mall_id": 1,
+            "status": true,
+            "mall_name": "forum-fiza"
+        }
+    ],
+    "main_card": [
+        {
+            "main_card_id": 5,
+            "main_card_name": "forum main card",
+            "status": true,
+            "mall_id": 1,
+            "image_list": [
+                {
+                    "image_id": 25,
+                    "image_url": "main-card-floor-image-m8anl64n.png",
+                    "image_type_id": 5,
+                    "created_at": "2019-11-29T17:28:08",
+                    "updated_at": "2019-11-29T17:28:08",
+                    "status": true,
+                    "image_type": "main-card-floor-image"
+                },
+                {
+                    "image_id": 26,
+                    "image_url": "main-card-name-image-akjkierg.png",
+                    "image_type_id": 5,
+                    "created_at": "2019-11-29T17:28:08",
+                    "updated_at": "2019-11-29T17:28:08",
+                    "status": true,
+                    "image_type": "main-card-name-image"
+                },
+                {
+                    "image_id": 27,
+                    "image_url": "main-card-offers-image-7vy5t0e.png",
+                    "image_type_id": 5,
+                    "created_at": "2019-11-29T17:28:08",
+                    "updated_at": "2019-11-29T17:28:08",
+                    "status": true,
+                    "image_type": "main-card-offers-image"
+                }
+            ]
+        }
+    ],
+    "banners": [
+        {
+            "banner_id": 2,
+            "banner_name": "banner1",
+            "validity": "2009-12-31T18:30:00.000Z",
+            "mall_id": 1,
+            "mall_name": "forum-fiza",
+            "image_list": [
+                {
+                    "image_id": 87,
+                    "image_url": "banner-cz1nn9xm.png",
+                    "image_type_id": 2,
+                    "created_at": "2019-12-05T12:50:32",
+                    "updated_at": "2019-12-06T16:18:55",
+                    "status": true,
+                    "image_type": "banner"
+                }
+            ]
+        }
+    ],
+    "events": [
+        {
+            "event_id": 5,
+            "event_name": "christmas",
+            "description": "christmas",
+            "startdate": "2019-12-03T18:30:00.000Z",
+            "enddate": "2019-12-03T18:30:00.000Z",
+            "status": true,
+            "mall_id": 1,
+            "mall_name": "forum-fiza",
+            "image_list": [
+                {
+                    "image_id": 37,
+                    "image_url": "event-ugvvfcs.png",
+                    "image_type_id": 5,
+                    "created_at": "2019-12-04T13:01:44",
+                    "updated_at": "2019-12-04T13:01:44",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 39,
+                    "image_url": "event-ajjcie0p.png",
+                    "image_type_id": 5,
+                    "created_at": "2019-12-04T13:01:44",
+                    "updated_at": "2019-12-04T13:01:44",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 38,
+                    "image_url": "event-uk05c5n9.png",
+                    "image_type_id": 5,
+                    "created_at": "2019-12-04T13:01:44",
+                    "updated_at": "2019-12-04T13:01:44",
+                    "status": true,
+                    "image_type": "event"
+                }
+            ]
+        },
+        {
+            "event_id": 6,
+            "event_name": "christmas",
+            "description": "christmas",
+            "startdate": "2019-12-03T18:30:00.000Z",
+            "enddate": "2019-12-03T18:30:00.000Z",
+            "status": true,
+            "mall_id": 1,
+            "mall_name": "forum-fiza",
+            "image_list": [
+                {
+                    "image_id": 40,
+                    "image_url": "event-hq4o9wk.png",
+                    "image_type_id": 6,
+                    "created_at": "2019-12-04T13:04:12",
+                    "updated_at": "2019-12-04T13:04:12",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 41,
+                    "image_url": "event-stp9j3g6.png",
+                    "image_type_id": 6,
+                    "created_at": "2019-12-04T13:04:12",
+                    "updated_at": "2019-12-04T13:04:12",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 42,
+                    "image_url": "event-d652bkp.png",
+                    "image_type_id": 6,
+                    "created_at": "2019-12-04T13:04:12",
+                    "updated_at": "2019-12-04T13:04:12",
+                    "status": true,
+                    "image_type": "event"
+                }
+            ]
+        },
+        {
+            "event_id": 7,
+            "event_name": "christmas",
+            "description": "christmas",
+            "startdate": "2019-12-03T18:30:00.000Z",
+            "enddate": "2019-12-03T18:30:00.000Z",
+            "status": true,
+            "mall_id": 1,
+            "mall_name": "forum-fiza",
+            "image_list": [
+                {
+                    "image_id": 150,
+                    "image_url": "event-x09xp5pm.png",
+                    "image_type_id": 7,
+                    "created_at": "2019-12-09T15:05:24",
+                    "updated_at": "2019-12-09T15:05:24",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 43,
+                    "image_url": "event-xbywtwq6.png",
+                    "image_type_id": 7,
+                    "created_at": "2019-12-04T13:05:03",
+                    "updated_at": "2019-12-04T13:05:03",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 44,
+                    "image_url": "event-tti76rm.png",
+                    "image_type_id": 7,
+                    "created_at": "2019-12-04T13:05:03",
+                    "updated_at": "2019-12-04T13:05:03",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 45,
+                    "image_url": "event-t7u8t8l.png",
+                    "image_type_id": 7,
+                    "created_at": "2019-12-04T13:05:03",
+                    "updated_at": "2019-12-04T13:05:03",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 157,
+                    "image_url": "event-9ybl1cqg.png",
+                    "image_type_id": 7,
+                    "created_at": "2019-12-09T15:06:10",
+                    "updated_at": "2019-12-09T15:06:10",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 156,
+                    "image_url": "event-vh6k3nbo.png",
+                    "image_type_id": 7,
+                    "created_at": "2019-12-09T15:06:10",
+                    "updated_at": "2019-12-09T15:06:10",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 155,
+                    "image_url": "event-bqx506i.png",
+                    "image_type_id": 7,
+                    "created_at": "2019-12-09T15:06:10",
+                    "updated_at": "2019-12-09T15:06:10",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 154,
+                    "image_url": "event-mxcrustc.png",
+                    "image_type_id": 7,
+                    "created_at": "2019-12-09T15:06:10",
+                    "updated_at": "2019-12-09T15:06:10",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 153,
+                    "image_url": "event-xunh2n2.png",
+                    "image_type_id": 7,
+                    "created_at": "2019-12-09T15:05:24",
+                    "updated_at": "2019-12-09T15:05:24",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 152,
+                    "image_url": "event-suzlu57.png",
+                    "image_type_id": 7,
+                    "created_at": "2019-12-09T15:05:24",
+                    "updated_at": "2019-12-09T15:05:24",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 151,
+                    "image_url": "event-kq87ks2.png",
+                    "image_type_id": 7,
+                    "created_at": "2019-12-09T15:05:24",
+                    "updated_at": "2019-12-09T15:05:24",
+                    "status": true,
+                    "image_type": "event"
+                }
+            ]
+        },
+        {
+            "event_id": 8,
+            "event_name": "christmas event",
+            "description": "christmas event",
+            "startdate": "2019-12-02T03:30:00.000Z",
+            "enddate": "2020-01-05T15:30:00.000Z",
+            "status": true,
+            "mall_id": 1,
+            "mall_name": "forum-fiza",
+            "image_list": [
+                {
+                    "image_id": 147,
+                    "image_url": "event-cg8w9k05.png",
+                    "image_type_id": 8,
+                    "created_at": "2019-12-09T15:00:23",
+                    "updated_at": "2019-12-09T15:00:23",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 46,
+                    "image_url": "event-ycbxh9b.png",
+                    "image_type_id": 8,
+                    "created_at": "2019-12-04T13:05:20",
+                    "updated_at": "2019-12-04T13:05:20",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 146,
+                    "image_url": "event-ea7imz4p.png",
+                    "image_type_id": 8,
+                    "created_at": "2019-12-09T15:00:23",
+                    "updated_at": "2019-12-09T15:00:23",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 149,
+                    "image_url": "event-gqjk41s.png",
+                    "image_type_id": 8,
+                    "created_at": "2019-12-09T15:00:23",
+                    "updated_at": "2019-12-09T15:00:23",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 48,
+                    "image_url": "event-mst97ume.png",
+                    "image_type_id": 8,
+                    "created_at": "2019-12-04T13:05:20",
+                    "updated_at": "2019-12-04T13:05:20",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 47,
+                    "image_url": "event-a5u2i5pr.png",
+                    "image_type_id": 8,
+                    "created_at": "2019-12-04T13:05:20",
+                    "updated_at": "2019-12-04T13:05:20",
+                    "status": true,
+                    "image_type": "event"
+                }
+            ]
+        },
+        {
+            "event_id": 11,
+            "event_name": "christmas",
+            "description": "christmas",
+            "startdate": "2019-12-03T18:30:00.000Z",
+            "enddate": "2019-12-03T18:30:00.000Z",
+            "status": true,
+            "mall_id": 1,
+            "mall_name": "forum-fiza",
+            "image_list": [
+                {
+                    "image_id": 57,
+                    "image_url": "event-lybdv0oe.png",
+                    "image_type_id": 11,
+                    "created_at": "2019-12-04T13:06:01",
+                    "updated_at": "2019-12-04T13:06:01",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 56,
+                    "image_url": "event-2hpf8ok.png",
+                    "image_type_id": 11,
+                    "created_at": "2019-12-04T13:06:01",
+                    "updated_at": "2019-12-04T13:06:01",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 55,
+                    "image_url": "event-3c7566wr.png",
+                    "image_type_id": 11,
+                    "created_at": "2019-12-04T13:06:01",
+                    "updated_at": "2019-12-04T13:06:01",
+                    "status": true,
+                    "image_type": "event"
+                }
+            ]
+        },
+        {
+            "event_id": 12,
+            "event_name": "christmas",
+            "description": "christmas",
+            "startdate": "2019-12-03T18:30:00.000Z",
+            "enddate": "2019-12-03T18:30:00.000Z",
+            "status": true,
+            "mall_id": 1,
+            "mall_name": "forum-fiza",
+            "image_list": [
+                {
+                    "image_id": 59,
+                    "image_url": "event-pj8l5nle.png",
+                    "image_type_id": 12,
+                    "created_at": "2019-12-04T13:06:13",
+                    "updated_at": "2019-12-04T13:06:13",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 58,
+                    "image_url": "event-eof2hfkt.png",
+                    "image_type_id": 12,
+                    "created_at": "2019-12-04T13:06:13",
+                    "updated_at": "2019-12-04T13:06:13",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 60,
+                    "image_url": "event-z4ohg3tb.png",
+                    "image_type_id": 12,
+                    "created_at": "2019-12-04T13:06:13",
+                    "updated_at": "2019-12-04T13:06:13",
+                    "status": true,
+                    "image_type": "event"
+                }
+            ]
+        },
+        {
+            "event_id": 13,
+            "event_name": "christmas",
+            "description": "christmas",
+            "startdate": "2019-12-03T18:30:00.000Z",
+            "enddate": "2019-12-03T18:30:00.000Z",
+            "status": true,
+            "mall_id": 1,
+            "mall_name": "forum-fiza",
+            "image_list": [
+                {
+                    "image_id": 63,
+                    "image_url": "event-j146kud.png",
+                    "image_type_id": 13,
+                    "created_at": "2019-12-04T13:06:51",
+                    "updated_at": "2019-12-04T13:06:51",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 62,
+                    "image_url": "event-x0wrtnje.png",
+                    "image_type_id": 13,
+                    "created_at": "2019-12-04T13:06:51",
+                    "updated_at": "2019-12-04T13:06:51",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 61,
+                    "image_url": "event-f3c0l4c.png",
+                    "image_type_id": 13,
+                    "created_at": "2019-12-04T13:06:51",
+                    "updated_at": "2019-12-04T13:06:51",
+                    "status": true,
+                    "image_type": "event"
+                }
+            ]
+        },
+        {
+            "event_id": 14,
+            "event_name": "christmas",
+            "description": "christmas",
+            "startdate": "2019-12-03T18:30:00.000Z",
+            "enddate": "2019-12-03T18:30:00.000Z",
+            "status": true,
+            "mall_id": 1,
+            "mall_name": "forum-fiza",
+            "image_list": [
+                {
+                    "image_id": 80,
+                    "image_url": "event-mcg99win.png",
+                    "image_type_id": 14,
+                    "created_at": "2019-12-04T16:44:42",
+                    "updated_at": "2019-12-04T16:44:42",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 78,
+                    "image_url": "event-ky4rbl9o.png",
+                    "image_type_id": 14,
+                    "created_at": "2019-12-04T16:44:42",
+                    "updated_at": "2019-12-04T16:44:42",
+                    "status": true,
+                    "image_type": "event"
+                }
+            ]
+        },
+        {
+            "event_id": 16,
+            "event_name": "christmas",
+            "description": "christmas",
+            "startdate": "2019-12-04T18:30:00.000Z",
+            "enddate": "2019-12-04T18:30:00.000Z",
+            "status": true,
+            "mall_id": 1,
+            "mall_name": "forum-fiza",
+            "image_list": [
+                {
+                    "image_id": 85,
+                    "image_url": "event-es6vku1.png",
+                    "image_type_id": 16,
+                    "created_at": "2019-12-05T10:51:40",
+                    "updated_at": "2019-12-05T10:51:40",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 82,
+                    "image_url": "event-yovmvu46.png",
+                    "image_type_id": 16,
+                    "created_at": "2019-12-05T10:51:40",
+                    "updated_at": "2019-12-05T10:51:40",
+                    "status": true,
+                    "image_type": "event-cover-image"
+                },
+                {
+                    "image_id": 83,
+                    "image_url": "event-e67mhd0k.png",
+                    "image_type_id": 16,
+                    "created_at": "2019-12-05T10:51:40",
+                    "updated_at": "2019-12-05T10:51:40",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 84,
+                    "image_url": "event-rv956ml.png",
+                    "image_type_id": 16,
+                    "created_at": "2019-12-05T10:51:40",
+                    "updated_at": "2019-12-05T10:51:40",
+                    "status": true,
+                    "image_type": "event"
+                }
+            ]
+        },
+        {
+            "event_id": 17,
+            "event_name": "forum-event",
+            "description": "christmas event",
+            "startdate": "2019-12-01T18:30:00.000Z",
+            "enddate": "2020-01-04T18:30:00.000Z",
+            "status": true,
+            "mall_id": 1,
+            "mall_name": "forum-fiza",
+            "image_list": [
+                {
+                    "image_id": 129,
+                    "image_url": "event-w7ww9kde.png",
+                    "image_type_id": 17,
+                    "created_at": "2019-12-09T12:13:09",
+                    "updated_at": "2019-12-09T12:13:09",
+                    "status": true,
+                    "image_type": "event-cover-image"
+                }
+            ]
+        },
+        {
+            "event_id": 19,
+            "event_name": "forum-event",
+            "description": "christmas event",
+            "startdate": "2019-12-01T18:30:00.000Z",
+            "enddate": "2020-01-04T18:30:00.000Z",
+            "status": true,
+            "mall_id": 1,
+            "mall_name": "forum-fiza",
+            "image_list": [
+                {
+                    "image_id": 132,
+                    "image_url": "event-41g3j3d.png",
+                    "image_type_id": 19,
+                    "created_at": "2019-12-09T12:13:55",
+                    "updated_at": "2019-12-09T12:13:55",
+                    "status": true,
+                    "image_type": "event-cover-image"
+                }
+            ]
+        },
+        {
+            "event_id": 20,
+            "event_name": "forum-event",
+            "description": "christmas event",
+            "startdate": "2019-12-01T18:30:00.000Z",
+            "enddate": "2020-01-04T18:30:00.000Z",
+            "status": true,
+            "mall_id": 1,
+            "mall_name": "forum-fiza",
+            "image_list": [
+                {
+                    "image_id": 133,
+                    "image_url": "event-td1zhj6a.png",
+                    "image_type_id": 20,
+                    "created_at": "2019-12-09T12:14:23",
+                    "updated_at": "2019-12-09T12:14:23",
+                    "status": true,
+                    "image_type": "event-cover-image"
+                }
+            ]
+        },
+        {
+            "event_id": 21,
+            "event_name": "forum-event",
+            "description": "christmas event",
+            "startdate": "2019-12-01T18:30:00.000Z",
+            "enddate": "2020-01-04T18:30:00.000Z",
+            "status": true,
+            "mall_id": 1,
+            "mall_name": "forum-fiza",
+            "image_list": [
+                {
+                    "image_id": 136,
+                    "image_url": "event-6dlgbk2p.png",
+                    "image_type_id": 21,
+                    "created_at": "2019-12-09T12:15:08",
+                    "updated_at": "2019-12-09T12:15:08",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 134,
+                    "image_url": "event-rrg6o5b8.png",
+                    "image_type_id": 21,
+                    "created_at": "2019-12-09T12:15:08",
+                    "updated_at": "2019-12-09T12:15:08",
+                    "status": true,
+                    "image_type": "event-cover-image"
+                },
+                {
+                    "image_id": 135,
+                    "image_url": "event-pqf24mh.png",
+                    "image_type_id": 21,
+                    "created_at": "2019-12-09T12:15:08",
+                    "updated_at": "2019-12-09T12:15:08",
+                    "status": true,
+                    "image_type": "event"
+                }
+            ]
+        },
+        {
+            "event_id": 22,
+            "event_name": "forum-event",
+            "description": "christmas event",
+            "startdate": "2019-12-01T18:30:00.000Z",
+            "enddate": "2020-01-04T18:30:00.000Z",
+            "status": true,
+            "mall_id": 1,
+            "mall_name": "forum-fiza",
+            "image_list": [
+                {
+                    "image_id": 138,
+                    "image_url": "event-5g3dhvjo.png",
+                    "image_type_id": 22,
+                    "created_at": "2019-12-09T12:15:58",
+                    "updated_at": "2019-12-09T12:15:58",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 137,
+                    "image_url": "event-c27bz9p.png",
+                    "image_type_id": 22,
+                    "created_at": "2019-12-09T12:15:58",
+                    "updated_at": "2019-12-09T12:15:58",
+                    "status": true,
+                    "image_type": "event-cover-image"
+                },
+                {
+                    "image_id": 139,
+                    "image_url": "event-qm34y3mj.png",
+                    "image_type_id": 22,
+                    "created_at": "2019-12-09T12:15:58",
+                    "updated_at": "2019-12-09T12:15:58",
+                    "status": true,
+                    "image_type": "event"
+                }
+            ]
+        },
+        {
+            "event_id": 23,
+            "event_name": "forum-event",
+            "description": "christmas event",
+            "startdate": "2019-12-01T18:30:00.000Z",
+            "enddate": "2020-01-04T18:30:00.000Z",
+            "status": true,
+            "mall_id": 1,
+            "mall_name": "forum-fiza",
+            "image_list": [
+                {
+                    "image_id": 142,
+                    "image_url": "event-65fb7elp.png",
+                    "image_type_id": 23,
+                    "created_at": "2019-12-09T12:16:13",
+                    "updated_at": "2019-12-09T12:16:13",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 141,
+                    "image_url": "event-4yna0ndi.png",
+                    "image_type_id": 23,
+                    "created_at": "2019-12-09T12:16:13",
+                    "updated_at": "2019-12-09T12:16:13",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 140,
+                    "image_url": "event-mbdbrerc.png",
+                    "image_type_id": 23,
+                    "created_at": "2019-12-09T12:16:13",
+                    "updated_at": "2019-12-09T12:16:13",
+                    "status": true,
+                    "image_type": "event-cover-image"
+                }
+            ]
+        },
+        {
+            "event_id": 24,
+            "event_name": "forum-event",
+            "description": "christmas event",
+            "startdate": "2019-12-01T18:30:00.000Z",
+            "enddate": "2020-01-04T18:30:00.000Z",
+            "status": true,
+            "mall_id": 1,
+            "mall_name": "forum-fiza",
+            "image_list": [
+                {
+                    "image_id": 145,
+                    "image_url": "event-a85vmrmc.png",
+                    "image_type_id": 24,
+                    "created_at": "2019-12-09T12:16:35",
+                    "updated_at": "2019-12-09T12:16:35",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 144,
+                    "image_url": "event-guqgta8f.png",
+                    "image_type_id": 24,
+                    "created_at": "2019-12-09T12:16:35",
+                    "updated_at": "2019-12-09T12:16:35",
+                    "status": true,
+                    "image_type": "event"
+                },
+                {
+                    "image_id": 158,
+                    "image_url": "event-htvlfd09.png",
+                    "image_type_id": 24,
+                    "created_at": "2019-12-09T15:29:51",
+                    "updated_at": "2019-12-09T15:29:51",
+                    "status": true,
+                    "image_type": "event-cover-image"
+                }
+            ]
+        }
+    ],
+    "floors": [
+        {
+            "floor_id": 18,
+            "floor_name": "Lower ground",
+            "alias": "LG",
+            "atm": true,
+            "wheelchair": false,
+            "babycare": true,
+            "washroom": false,
+            "mall_id": 1,
+            "mall_name": "forum-fiza",
+            "status": true,
+            "image_list": [
+                {
+                    "image_id": 5,
+                    "image_url": "d53j558q.png",
+                    "image_type_id": 18,
+                    "created_at": "2019-11-27T15:57:36",
+                    "updated_at": "2019-11-27T15:57:36",
+                    "status": true,
+                    "image_type": "floor"
+                }
+            ]
+        },
+        {
+            "floor_id": 19,
+            "floor_name": "upper ground",
+            "alias": "UG",
+            "atm": true,
+            "wheelchair": true,
+            "babycare": true,
+            "washroom": true,
+            "mall_id": 1,
+            "mall_name": "forum-fiza",
+            "status": true,
+            "image_list": [
+                {
+                    "image_id": 92,
+                    "image_url": "cwvhm6v.png",
+                    "image_type_id": 19,
+                    "created_at": "2019-12-06T15:46:19",
+                    "updated_at": "2019-12-06T15:46:19",
+                    "status": false,
+                    "image_type": "floor"
+                },
+                {
+                    "image_id": 94,
+                    "image_url": "floor-6kqtpbic.png",
+                    "image_type_id": 19,
+                    "created_at": "2019-12-06T16:20:23",
+                    "updated_at": "2019-12-06T16:20:23",
+                    "status": true,
+                    "image_type": "floor"
+                }
+            ]
+        }
+    ],
+    "stores": [
+        {
+            "floor_id": 18,
+            "floor_name": "Lower ground",
+            "alias": "LG",
+            "mall_id": 1,
+            "mall_name": "forum-fiza",
+            "store_id": 4,
+            "store_number": 101,
+            "image_url": "store-t4qzge7t.json",
+            "image_type_id": 4,
+            "image_type": "store-path",
+            "image_id": 101
+        },
+        {
+            "floor_id": 19,
+            "floor_name": "upper ground",
+            "alias": "UG",
+            "mall_id": 1,
+            "mall_name": "forum-fiza",
+            "store_id": 5,
+            "store_number": 201,
+            "image_url": "store-obvzd00v.json",
+            "image_type_id": 5,
+            "image_type": "store-path",
+            "image_id": 102
+        },
+        {
+            "floor_id": 19,
+            "floor_name": "upper ground",
+            "alias": "UG",
+            "mall_id": 1,
+            "mall_name": "forum-fiza",
+            "store_id": 6,
+            "store_number": 202,
+            "image_url": "store-5vlr8u6l.json",
+            "image_type_id": 6,
+            "image_type": "store-path",
+            "image_id": 103
+        },
+        {
+            "floor_id": 19,
+            "floor_name": "upper ground",
+            "alias": "UG",
+            "mall_id": 1,
+            "mall_name": "forum-fiza",
+            "store_id": 7,
+            "store_number": 203,
+            "image_url": "store-mb934zus.json",
+            "image_type_id": 7,
+            "image_type": "store-path",
+            "image_id": 170
+        }
+    ],
+    "shops": [
+        {
+            "shop_id": 14,
+            "shop_name": "woodlands",
+            "contact_number": "9989898899",
+            "status": true,
+            "image_list": [
+                {
+                    "image_id": 161,
+                    "image_url": "shoplogo-zzldr3l9.png",
+                    "image_type_id": 14,
+                    "created_at": "2019-12-10T14:22:38",
+                    "updated_at": "2019-12-10T14:22:38",
+                    "status": true,
+                    "image_type": "shop-logo"
+                },
+                {
+                    "image_id": 162,
+                    "image_url": "shopimage-zzldr3l9.png",
+                    "image_type_id": 14,
+                    "created_at": "2019-12-10T14:22:38",
+                    "updated_at": "2019-12-10T14:22:38",
+                    "status": true,
+                    "image_type": "shop-image"
+                }
+            ],
+            "store_list": [
+                {
+                    "store_id": 6,
+                    "store_number": 202,
+                    "floor_id": 19,
+                    "status": true,
+                    "created_at": "2019-12-07T12:17:41",
+                    "updated_at": "2019-12-07T12:17:41"
+                },
+                {
+                    "store_id": 4,
+                    "store_number": 101,
+                    "floor_id": 18,
+                    "status": true,
+                    "created_at": "2019-11-28T12:35:00",
+                    "updated_at": "2019-12-31T13:51:18"
+                }
+            ],
+            "category_list": [
+                {
+                    "category_id": 1,
+                    "category_name": "home applience",
+                    "status": true
+                },
+                {
+                    "category_id": 2,
+                    "category_name": "electronics",
+                    "status": true
+                }
+            ]
+        },
+        {
+            "shop_id": 15,
+            "shop_name": "arrow",
+            "contact_number": "4565852545",
+            "status": true,
+            "image_list": [
+                {
+                    "image_id": 10,
+                    "image_url": "shoplogo-0krrj6bc.jpg",
+                    "image_type_id": 15,
+                    "created_at": "2019-11-28T16:03:42",
+                    "updated_at": "2019-11-28T16:03:42",
+                    "status": true,
+                    "image_type": "shop-logo"
+                },
+                {
+                    "image_id": 14,
+                    "image_url": "shopimage-essjf76.jpg",
+                    "image_type_id": 15,
+                    "created_at": "2019-11-28T17:49:33",
+                    "updated_at": "2019-11-29T11:22:41",
+                    "status": true,
+                    "image_type": "shop-image"
+                }
+            ],
+            "store_list": [
+                {
+                    "store_id": 7,
+                    "store_number": 203,
+                    "floor_id": 19,
+                    "status": true,
+                    "created_at": "2019-12-11T13:02:58",
+                    "updated_at": "2019-12-11T13:02:58"
+                }
+            ],
+            "category_list": [
+                {
+                    "category_id": 2,
+                    "category_name": "electronics",
+                    "status": true
+                }
+            ]
+        },
+        {
+            "shop_id": 13,
+            "shop_name": "puma",
+            "contact_number": "9989898899",
+            "status": true,
+            "image_list": [
+                {
+                    "image_id": 99,
+                    "image_url": "shoplogo-czw04i2o.png",
+                    "image_type_id": 13,
+                    "created_at": "2019-12-06T18:09:39",
+                    "updated_at": "2019-12-06T18:09:39",
+                    "status": true,
+                    "image_type": "shop-logo"
+                },
+                {
+                    "image_id": 100,
+                    "image_url": "shopimage-czw04i2o.png",
+                    "image_type_id": 13,
+                    "created_at": "2019-12-06T18:09:39",
+                    "updated_at": "2019-12-06T18:09:39",
+                    "status": true,
+                    "image_type": "shop-image"
+                }
+            ],
+            "store_list": [
+                {
+                    "store_id": 5,
+                    "store_number": 201,
+                    "floor_id": 19,
+                    "status": true,
+                    "created_at": "2019-12-07T12:16:49",
+                    "updated_at": "2019-12-07T12:16:49"
+                }
+            ],
+            "category_list": [
+                {
+                    "category_id": 1,
+                    "category_name": "home applience",
+                    "status": true
+                },
+                {
+                    "category_id": 2,
+                    "category_name": "electronics",
+                    "status": true
+                }
+            ]
+        }
+    ],
+    "offers": [
+        {
+            "shop_id": 18,
+            "shop_name": "bata",
+            "offer_id": 3,
+            "offer_name": "flat50",
+            "validity": "2020-01-30T23:00:00",
+            "status": true,
+            "image_list": [
+                {
+                    "image_id": 176,
+                    "image_url": "offer-image-eedrszb.png",
+                    "image_type_id": 3,
+                    "created_at": "2019-12-19T13:48:15",
+                    "updated_at": "2019-12-19T13:48:15",
+                    "status": true,
+                    "image_type": "offer-image"
+                }
+            ]
+        },
+        {
+            "shop_id": 14,
+            "shop_name": "woodlands",
+            "offer_id": 6,
+            "offer_name": "flat50",
+            "validity": "2020-01-30T23:00:00",
+            "status": true,
+            "image_list": [
+                null
+            ]
+        }
+    ]
+}

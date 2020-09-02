@@ -1,0 +1,110 @@
+WITH main_card_image_agg as (
+            select c.*, json_agg(i.*) as main_card_image_list 
+            from main_card c,image i 
+            where c.main_card_id = i.image_type_id 
+            and image_type ILIKE 'main-card%' 
+            and c.status =true 
+            and i.status=true 
+            group by c.main_card_id
+        ),
+        main_card_agg as (
+            select m1.mall_id,json_agg(ci.*) as main_card_list
+            from mall m1, main_card_image_agg ci, tbl_screen sc  
+            where m1.mall_id = ci.mall_id
+            and m1.mall_id = sc.mall_id 
+            and sc.device_unique_id=$1
+            group by m1.mall_id
+        ),
+        banner_image_agg as (
+            select b.*, json_agg(i.*) as banner_image_list
+            from banners b,image i 
+            where b.banner_id = i.image_type_id 
+            and image_type ILIKE 'banner%' 
+            and b.status =true 
+            and i.status=true 
+            group by b.banner_id
+        ),
+        banner_agg as (
+            select m1.mall_id,json_agg(bi.*) as banner_list
+            from mall m1, banner_image_agg bi, tbl_screen sc  
+            where m1.mall_id = bi.mall_id
+            and m1.mall_id = sc.mall_id 
+            and sc.device_unique_id=$1
+            group by m1.mall_id
+        ),
+        event_image_agg as (
+            select e.*, json_agg(i.*) as event_image_list 
+            from events e,image i 
+            where e.event_id = i.image_type_id 
+            and image_type ILIKE 'event%' 
+            and e.status =true 
+            and i.status=true 
+            group by e.event_id
+            order by e.event_id
+        ),
+        event_agg as (
+            select m1.mall_id,json_agg(ea.*) as event_list
+            from mall m1, event_image_agg ea, tbl_screen sc  
+            where m1.mall_id = ea.mall_id
+            and m1.mall_id = sc.mall_id 
+            and sc.device_unique_id=$1
+            group by m1.mall_id
+        ),
+        mall_info_agg as (
+            select m1.mall_id,json_agg(i.*) as mall_info_list
+            from mall m1, mall_info i, tbl_screen sc  
+            where m1.mall_id = i.mall_id
+            and m1.mall_id = sc.mall_id 
+            and sc.device_unique_id=$1
+            group by m1.mall_id
+        )
+    select m.*,
+    json_agg(ia.*) as mall_info,
+    json_agg(ca.*) as main_card,
+    json_agg(ba.*) as banner,
+    json_agg(e.*) as events
+    from mall m,tbl_screen sc,event_agg e,main_card_agg ca,banner_agg ba,mall_info_agg ia
+    where m.mall_id = sc.mall_id 
+    and m.mall_id = e.mall_id
+    and m.mall_id = ca.mall_id
+    and m.mall_id = ba.mall_id
+    and m.mall_id = ia.mall_id
+    and sc.device_unique_id=$1
+    group by m.mall_id;
+
+
+WITH main_card_image_agg as (
+        select c.*, json_agg(i.*) as main_card_image_list 
+        from main_card c,image i 
+        where c.main_card_id = i.image_type_id 
+        and image_type ILIKE 'main-card%' 
+        and c.status =true 
+        and i.status=true 
+        group by c.main_card_id
+    ),
+    banner_image_agg as (
+        select b.*, json_agg(i.*) as banner_image_list
+        from banners b,image i 
+        where b.banner_id = i.image_type_id 
+        and image_type ILIKE 'banner%' 
+        and b.status =true 
+        and i.status=true 
+        group by b.banner_id
+    ),
+    event_image_agg as (
+        select e.*, json_agg(i.*) as event_image_list 
+        from events e,image i 
+        where e.event_id = i.image_type_id 
+        and image_type ILIKE 'event%' 
+        and e.status =true 
+        and i.status=true 
+        group by e.event_id
+    ) 
+select m.*,json_agg(ca.*) as main_card_list,json_agg(ba.*) as banner_list,json_agg(ea.*) as event_list
+from mall m,main_card_image_agg ca,banner_image_agg ba,tbl_screen sc,event_image_agg ea
+where m.mall_id = ca.mall_id
+and m.mall_id = ba.mall_id 
+ and m.mall_id = sc.mall_id 
+and m.mall_id = ea.mall_id 
+and sc.device_unique_id=$1
+group by m.mall_id

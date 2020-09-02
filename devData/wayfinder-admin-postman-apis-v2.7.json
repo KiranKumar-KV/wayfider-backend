@@ -1,0 +1,3126 @@
+{
+	"info": {
+		"_postman_id": "a6e7aad0-841a-43e5-8925-3c8092d5d1d5",
+		"name": "wayfinder-admin copy",
+		"description": "USE AXIOS TO CALL API'S\n\nsample axios post request without formdata\n\nlet data = {\n\t\"name\" : \"electronics\"\n}\n\naxios.post('http://localhost:5000/wayfinder-api/category/add-category',{data})\n.then((response)=>{\n\tconsole.log(response)\n\t\n})\n.catch((error)=>{\n\tconsole.log(error)\n})\n\n\nsample get request with id\n\n\nlet category_id=1;\naxios.get('http://localhost:5000/wayfinder-api/category/get-category-by-id/'+category_id)\n.then((response)=>{\n\tconsole.log(response)\n\t\n})\n.catch((error)=>{\n\tconsole.log(error)\n})\n\n\nsample post request with form data\n\n\nlet mainform = new FormData();\n\nmainform.append('name', 'forum main card');\n\nmainform.append('mall_id',1);\n\nmainform.append('floorimage', this.state.floorimage);\n\nmainform.append('nameimage', this.state.nameimage);\n\nmainform.append('offersimage', this.state.offerimage);\n\n\n\n\tAxios({\n\t\n\t    method: 'post',\n\t    \n\t    url: 'http://localhost:5000/wayfinder-api/main-cards/add-main-card',\n\t    \n\t    data: mainform,\n\t    \n\t    config:{ headers: {'Content-Type': 'multipart/form-data' }}\n\t})\n\t\n\t.then((response) => {\n\t\n\t    console.log(response)\n\t    \n\t})\n\n\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login related apis",
+			"item": [
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/login/forget-password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"data\": {\n\t\"email\":\"kiranbhatkv@gmail.com\"\n\t\n }\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/login/forget-password",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"login",
+								"forget-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/login/get-login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"data\": {\n\t\"email\":\"vaishakshettykudlu@gmail.com\",\n\t\"password\":750224\n\t\n }\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/login/get-login",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"login",
+								"get-login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/login/get-login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"data\": {\n\t\"email\":\"vaishakshettykudlu@gmail.com\",\n\t\"password\":750224\n\t\n }\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/login/get-login",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"login",
+								"get-login"
+							]
+						},
+						"description": "login api"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "users related apis",
+			"item": [
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/users/get-user-by-userid/5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/users/get-user-by-userid/5",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"users",
+								"get-user-by-userid",
+								"5"
+							]
+						},
+						"description": "5 is a user id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/users/get-all-users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/users/get-all-users/7",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"users",
+								"get-all-users",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/users/get-users-by-mall/2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/users/get-users-by-mall/2",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"users",
+								"get-users-by-mall",
+								"2"
+							]
+						},
+						"description": "Here 2 is a mall ID"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/users/add-user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"data\": {\n\t\"name\":\"sharath\",\n\t\"phone\":8765486985,\n\t\"email\":\"sharathacharya723@gmail.com\",\n\t\"role_id\":1,\n\t\"mall_id\":2\n\t\n }\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/users/add-user",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"users",
+								"add-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/users/update-user-status-by-id/5",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/users/update-user-status-by-id/5",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"users",
+								"update-user-status-by-id",
+								"5"
+							]
+						},
+						"description": "Here 5 is a user id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/users/change-password/8",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/users/change-password/8",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"users",
+								"change-password",
+								"8"
+							]
+						},
+						"description": "Here 8 is a user id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/users/update-user/8",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\" : {\n\t\t\"email\" : \"sharathacharya723@gmail.com\",\n\t\t\"phone\" : 9878987898,\n\t\t\"name\" : \"sharath\",\n\t\t\"role_id\" : 1\n\t}\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/users/update-user/8",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"users",
+								"update-user",
+								"8"
+							]
+						},
+						"description": "Here 8 is a user id\n\nThis api is used to update user\n\nemail\nphone\nname\nrole_id"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "roles related apis",
+			"item": [
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/roles/get-all-roles",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/roles/get-all-roles/5",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"roles",
+								"get-all-roles",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/roles/get-role-by-id/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/roles/get-role-by-id/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"roles",
+								"get-role-by-id",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/roles/add-role",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\":{\n\t\t\"name\":\"staff\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/roles/add-role",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"roles",
+								"add-role"
+							]
+						},
+						"description": "add role\n\nname  ----> text"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/roles/update-role-status-by-id/1",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/roles/update-role-status-by-id/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"roles",
+								"update-role-status-by-id",
+								"1"
+							]
+						},
+						"description": "To delete a role\n\nHere 1 is a role id"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "malls related apis",
+			"item": [
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/malls/get-malls",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/malls/get-malls",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"malls",
+								"get-malls"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/malls/get-malls-by-id/8",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/malls/get-malls-by-id/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"malls",
+								"get-malls-by-id",
+								"1"
+							]
+						},
+						"description": "Here 8 is a mall-id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/malls/add-mall",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "multipart/formdata",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "forum-mall-mumbai",
+									"type": "text"
+								},
+								{
+									"key": "location",
+									"value": "mumbai",
+									"type": "text"
+								},
+								{
+									"key": "malllogo",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/logos/nike.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/malls/add-mall",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"malls",
+								"add-mall"
+							]
+						},
+						"description": "must be form data\n\nname      ------->  text\nlocation  ------->  text\nmalllogo  ------->  png fiel"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/malls/update-mall-status/1",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/malls/update-mall-status/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"malls",
+								"update-mall-status",
+								"1"
+							]
+						},
+						"description": "To dalate mall\n\n1 is a mall id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/malls/update-mall-logo",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image_id",
+									"value": "80",
+									"type": "text"
+								},
+								{
+									"key": "mall_id",
+									"value": "8",
+									"type": "text"
+								},
+								{
+									"key": "malllogo",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/malls/update-mall-logo",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"malls",
+								"update-mall-logo"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "floor related apis",
+			"item": [
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/floors/get-floor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/floors/get-floor/5",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"floors",
+								"get-floor",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/floors/get-floor-by-id/18",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/floors/get-floor-by-id/18",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"floors",
+								"get-floor-by-id",
+								"18"
+							]
+						},
+						"description": "Here 18 is floor id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/floors/get-floor-by-mall-id/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/floors/get-floor-by-mall-id/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"floors",
+								"get-floor-by-mall-id",
+								"1"
+							]
+						},
+						"description": "Here 1 is mall id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/floors/add-floor",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "upper ground",
+									"type": "text"
+								},
+								{
+									"key": "alias",
+									"value": "UG",
+									"type": "text"
+								},
+								{
+									"key": "mall_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "imageCount",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "filename",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/floorplans/upperGround.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/floors/add-floor",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"floors",
+								"add-floor"
+							]
+						},
+						"description": "add only one image \nand imageCount should be 1"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/floors/update-floor-by-id/18",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\": {\n\t\t\"name\" : \"Lower ground\",\n\t\t\"alias\" : \"LG\",\n\t\t\"mall_id\" : 1\n\t}\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/floors/update-floor-by-id/18",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"floors",
+								"update-floor-by-id",
+								"18"
+							]
+						},
+						"description": "Here 18 is a floor id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/floors/update-floor-status-by-id/18",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/floors/update-floor-status-by-id/18",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"floors",
+								"update-floor-status-by-id",
+								"18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/floors/update-floor-image",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "floor_id",
+									"value": "19",
+									"type": "text"
+								},
+								{
+									"key": "image_id",
+									"value": "93",
+									"type": "text"
+								},
+								{
+									"key": "floorimage",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/floorplans/upperGround.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/floors/update-floor-image",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"floors",
+								"update-floor-image"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "category related apis",
+			"item": [
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/category/get-all-categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/category/get-all-categories",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"category",
+								"get-all-categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/category/get-category-by-id/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/category/get-category-by-id/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"category",
+								"get-category-by-id",
+								"1"
+							]
+						},
+						"description": "Here 1 is a category id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/category/add-category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\":{\n\t\t\"name\" : \"electronics\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/category/add-category",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"category",
+								"add-category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/category/update-category/1",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\":{\n\t\t\"name\":\"home applience\",\n\t\t\"status\":true\n\t}\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/category/update-category/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"category",
+								"update-category",
+								"1"
+							]
+						},
+						"description": "Here 1 is category id "
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/category/update-category-status/1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/category/update-category-status/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"category",
+								"update-category-status",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "store related apis",
+			"item": [
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/stores/get-all-stores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/stores/get-all-stores/5",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"stores",
+								"get-all-stores",
+								"5"
+							]
+						},
+						"description": "Stores are something like predefined stores which has store number and path. The shops are assigned to store.  "
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/stores/get-store-by-store-id/4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/stores/get-store-by-store-id/4",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"stores",
+								"get-store-by-store-id",
+								"4"
+							]
+						},
+						"description": "Here 4 is a store id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/stores/get-store-by-floor-id/18",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/stores/get-store-by-floor-id/18",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"stores",
+								"get-store-by-floor-id",
+								"18"
+							]
+						},
+						"description": "Here 18 is a floor id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/stores/get-all-empty-stores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/stores/get-all-empty-stores",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"stores",
+								"get-all-empty-stores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/stores/add-store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "floor_id",
+									"value": "19",
+									"type": "text"
+								},
+								{
+									"key": "store_number",
+									"value": "201",
+									"type": "text"
+								},
+								{
+									"key": "pathfile",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/path/horrorhouse.json"
+								},
+								{
+									"key": "mall_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/stores/add-store",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"stores",
+								"add-store"
+							]
+						},
+						"description": "Need to pass floor-id, store_number and pathfile"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/stores/update-store-status/4",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/stores/update-store-status/4",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"stores",
+								"update-store-status",
+								"4"
+							]
+						},
+						"description": "Here 4 is a store id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/stores/update-store-path",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "store_id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "image_id",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "pathfile",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/path/lifestyle_first.json"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/stores/update-store-path",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"stores",
+								"update-store-path"
+							]
+						},
+						"description": "need to pass store_id, image_id and pathfile in formdata"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/stores/get-stores/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/stores/get-stores/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"stores",
+								"get-stores",
+								"1"
+							]
+						},
+						"description": "Here 1 is a mall id"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "banners related apis",
+			"item": [
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/banners/get-all-banners",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/banners/get-all-banners/5",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"banners",
+								"get-all-banners",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/banners/get-banners-by-id/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/banners/get-banners-by-id/2",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"banners",
+								"get-banners-by-id",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/banners/get-banners-by-mall-id/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/banners/get-banners-by-mall-id/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"banners",
+								"get-banners-by-mall-id",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/banners/add-banner",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "banner_name",
+									"value": "banner new",
+									"type": "text"
+								},
+								{
+									"key": "validity",
+									"value": "2020-01-31 12:00:00",
+									"type": "text"
+								},
+								{
+									"key": "mall_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "bannerimage",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/logos/aromas.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/banners/add-banner",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"banners",
+								"add-banner"
+							]
+						},
+						"description": "API is used to add banners\n\nbanner_name\nvalidity\nmall_id\nbannerimage"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/banners/update-banner/4",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\" : {\n\t\t\"banner_name\" : \"banner2\",\n\t\t\"validity\" : \"2020-02-15 10:00:00\",\n\t\t\"mall_id\" : 4\n\t}\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/banners/update-banner/4",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"banners",
+								"update-banner",
+								"4"
+							]
+						},
+						"description": "Here 4 is a banner id.\n\nneed to pass json data in the following format\n\n{\n\t\"data\" : {\n\t\t\"banner_name\" : \"some name\",\n\t\t\"validity\" : \"expiry data\",\n\t\t\"mall_id\" : corresponding mall_id (integer)\n\t}\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/banners/delete-banner/1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/banners/delete-banner/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"banners",
+								"delete-banner",
+								"1"
+							]
+						},
+						"description": "Here banner Id is 1\n\n\nand we are not deleting the data. Just change the status to false."
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/banners/update-banner-image",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image_id",
+									"value": "86",
+									"type": "text"
+								},
+								{
+									"key": "banner_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "bannerimage",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/logos/kakunjesrasoi.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/banners/update-banner-image",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"banners",
+								"update-banner-image"
+							]
+						},
+						"description": "Here you need to pass formdata\nwith imageid bannerid and bannerimage file"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "main-card related apis",
+			"item": [
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/main-cards/get-all-main-cards",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/main-cards/get-all-main-cards/5",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"main-cards",
+								"get-all-main-cards",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/main-cards/get-main-cards-by-mall-id/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/main-cards/get-main-cards-by-mall-id/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"main-cards",
+								"get-main-cards-by-mall-id",
+								"1"
+							]
+						},
+						"description": "Here 1 is a mall id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/main-cards/get-main-cards-by-card-id/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/main-cards/get-main-cards-by-card-id/5",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"main-cards",
+								"get-main-cards-by-card-id",
+								"5"
+							]
+						},
+						"description": "Here 1 is a card id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/main-cards/add-main-card",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mall_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "city-center-main-cards",
+									"type": "text"
+								},
+								{
+									"key": "floorimage",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/logos/archies.png"
+								},
+								{
+									"key": "nameimage",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/logos/alkhizar.png"
+								},
+								{
+									"key": "offersimage",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/logos/aromas.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/main-cards/add-main-card",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"main-cards",
+								"add-main-card"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/main-cards/update-mall-main-card",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\" : {\n\t\t\"mall_id\" : 8,\n\t\t\"main_card_id\" : 12\n\t}\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/main-cards/update-mall-main-card",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"main-cards",
+								"update-mall-main-card"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/main-cards/change-main-card-image/127",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "imagefile",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/logos/ilahui.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/main-cards/change-main-card-image/127",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"main-cards",
+								"change-main-card-image",
+								"127"
+							]
+						},
+						"description": "Here 127 is a image_id and\nYou need to send image file"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/main-cards/main-card-delete/8",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/main-cards/main-card-delete/8",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"main-cards",
+								"main-card-delete",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "event related apis",
+			"item": [
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/events/get-all-events",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/events/get-all-events/7",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"events",
+								"get-all-events",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/events/get-events-by-id/5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/events/get-events-by-id/5",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"events",
+								"get-events-by-id",
+								"5"
+							]
+						},
+						"description": "Here 5 is event id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/events/get-events-by-mall-id/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/events/get-events-by-mall-id/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"events",
+								"get-events-by-mall-id",
+								"1"
+							]
+						},
+						"description": "Here 1 is mall id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/events/add-event",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "event_name",
+									"value": "forum-event",
+									"type": "text"
+								},
+								{
+									"key": "desc",
+									"value": "christmas event",
+									"type": "text"
+								},
+								{
+									"key": "startdate",
+									"value": "2019-12-02 10:00:00",
+									"type": "text"
+								},
+								{
+									"key": "enddate",
+									"value": "2020-01-05 23:00:00",
+									"type": "text"
+								},
+								{
+									"key": "mall_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "eventcoverimage",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/logos/chicking.png"
+								},
+								{
+									"key": "eventfile",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/logos/athome.png"
+								},
+								{
+									"key": "eventfile",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/logos/baggit.png"
+								},
+								{
+									"key": "count",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/events/add-event",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"events",
+								"add-event"
+							]
+						},
+						"description": "Here event filed might be multiple so you need to append multiple times to formdata\n\n\nand must add count(number of event images)"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/events/delete-events/18",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/events/delete-events/18",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"events",
+								"delete-events",
+								"18"
+							]
+						},
+						"description": "Here 18 is a event id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/events/update-event/8",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "event_name",
+									"value": "christmas event",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "christmas event",
+									"type": "text"
+								},
+								{
+									"key": "startdate",
+									"value": "2020-01-25 12:00:00",
+									"type": "text"
+								},
+								{
+									"key": "enddate",
+									"value": "2020-01-30 12:00:00",
+									"type": "text"
+								},
+								{
+									"key": "event_cover_image",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/logos/trendsfootwear.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/events/update-event/4",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"events",
+								"update-event",
+								"4"
+							]
+						},
+						"description": "Here 8 is a event id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/events/add-image-to-event/7",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "count",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "eventfile",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/logos/danielwellington.png"
+								},
+								{
+									"key": "eventfile",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/logos/bata.png"
+								},
+								{
+									"key": "eventfile",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/logos/cookieman.png"
+								},
+								{
+									"key": "eventfile",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/logos/gocolors.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/events/add-image-to-event/7",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"events",
+								"add-image-to-event",
+								"7"
+							]
+						},
+						"description": "Here 7 is a image id.\n\nneed to pass image count in data"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/events/delete-event-image/148",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/events/delete-event-image/148",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"events",
+								"delete-event-image",
+								"148"
+							]
+						},
+						"description": "Here 148 is image id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/events/update-event-cover-image",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image_id",
+									"value": "143",
+									"type": "text"
+								},
+								{
+									"key": "event_id",
+									"value": "24",
+									"type": "text"
+								},
+								{
+									"key": "eventcoverimage",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/logos/pizzahut.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/events/update-event-cover-image",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"events",
+								"update-event-cover-image"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "mall-info related apis",
+			"item": [
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/mall-info/get-all-mall-info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/mall-info/get-all-mall-info/7",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"mall-info",
+								"get-all-mall-info",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/mall-info/get-mall-info-by-id/3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/mall-info/get-mall-info-by-id/3",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"mall-info",
+								"get-mall-info-by-id",
+								"3"
+							]
+						},
+						"description": "Here 3 is a mall-info id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/mall-info/get-mall-info-by-mall-id/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/mall-info/get-mall-info-by-mall-id/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"mall-info",
+								"get-mall-info-by-mall-id",
+								"1"
+							]
+						},
+						"description": "Here 1 is a mall id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/mall-info/add-mall-info",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\" : {\n\t\t\"helptext\" : \"helpdesk\",\n\t\t\"phone\" : \"9876543210\",\n\t\t\"email\" : \"helpdesk@gmail.com\",\n\t\t\"mall_id\" : 1\n\t}\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/mall-info/add-mall-info",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"mall-info",
+								"add-mall-info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/mall-info/update-mall-info/2",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\" : {\n\t\t\"helptext\" : \"fire-help-desk\",\n\t\t\"phone\" : 8798899785,\n\t\t\"email\" : \"fire@forum.com\",\n\t\t\"mall_id\":2\n\t}\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/mall-info/update-mall-info/2",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"mall-info",
+								"update-mall-info",
+								"2"
+							]
+						},
+						"description": "where 2 is a mall-info id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/mall-info/delete-mall-info/2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/mall-info/delete-mall-info/2",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"mall-info",
+								"delete-mall-info",
+								"2"
+							]
+						},
+						"description": "Here 2 im a mall-info-id"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "offers related apis",
+			"item": [
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/offers/get-all-offers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/offers/get-all-offers/7",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"offers",
+								"get-all-offers",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/offers/get-offers-by-id/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/offers/get-offers-by-id/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"offers",
+								"get-offers-by-id",
+								"1"
+							]
+						},
+						"description": "Here 1 is offer id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/offers/get-offers-by-shop-id/13",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/offers/get-offers-by-shop-id/13",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"offers",
+								"get-offers-by-shop-id",
+								"13"
+							]
+						},
+						"description": "Here 13 is a shop id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/offers/add-offers",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "offer_name",
+									"value": "flat50",
+									"type": "text"
+								},
+								{
+									"key": "desc",
+									"value": "flat 50 percent offer ",
+									"type": "text"
+								},
+								{
+									"key": "validity",
+									"value": "2020-01-30 23:00:00",
+									"type": "text"
+								},
+								{
+									"key": "shop_id",
+									"value": "14",
+									"type": "text"
+								},
+								{
+									"key": "offerimagefile",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/offers/add-offers",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"offers",
+								"add-offers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/offers/updateOfferValidity/1",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\" : {\n\t\t\"validity\" : \"2020-02-15 12:00:00\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/offers/updateOfferValidity/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"offers",
+								"updateOfferValidity",
+								"1"
+							]
+						},
+						"description": "Here 1 is a offer id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/offers/update-offer-data/1",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\" : {\n\t\t\"offer_name\" : \"christmas dhamaka\",\n\t\t\"desc\" : \"christmas offers\",\n\t\t\"validity\" : \"2020-02-16 12:00:00\",\n\t\t\"shop_id\" : 13\n\t}\n}"
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/offers/update-offer-data/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"offers",
+								"update-offer-data",
+								"1"
+							]
+						},
+						"description": "Here 1 is a offer id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/offers/update-offer-image/159",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "offerimage",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/logos/newu.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/offers/update-offer-image/159",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"offers",
+								"update-offer-image",
+								"159"
+							]
+						},
+						"description": "Here 159 is a image id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/offers/update-offer-status/1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/offers/update-offer-status/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"offers",
+								"update-offer-status",
+								"1"
+							]
+						},
+						"description": "Here 1 is a offer id"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "shops related apis",
+			"item": [
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/shops/get-all-shops",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/shops/get-all-shops/5",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"shops",
+								"get-all-shops",
+								"5"
+							]
+						},
+						"description": "5 is a user id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/shops/get-all-stores-by-shop-id/14",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/shops/get-all-stores-by-shop-id/14",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"shops",
+								"get-all-stores-by-shop-id",
+								"14"
+							]
+						},
+						"description": "Here 14 is a shop id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/shops/get-all-categories-by-shop-id/13",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/shops/get-all-categories-by-shop-id/15",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"shops",
+								"get-all-categories-by-shop-id",
+								"15"
+							]
+						},
+						"description": "Here 13 is a shop id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/shops/get-shops-by-shop-id/14",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/shops/get-shops-by-shop-id/14",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"shops",
+								"get-shops-by-shop-id",
+								"14"
+							]
+						},
+						"description": "Here 14 is a shop id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/shops/add-shop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "bata",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "456585254",
+									"type": "text"
+								},
+								{
+									"key": "store_ids",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "store_ids",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "logofile",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/logos/arrow.png"
+								},
+								{
+									"key": "shopimage",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/logos/bata.png"
+								},
+								{
+									"key": "category_ids",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/shops/add-shop",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"shops",
+								"add-shop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/shops/update-shop-logo",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image_id",
+									"value": "165",
+									"type": "text"
+								},
+								{
+									"key": "shop_id",
+									"value": "17",
+									"type": "text"
+								},
+								{
+									"key": "logofile",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/logos/cookieman.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/shops/update-shop-logo",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"shops",
+								"update-shop-logo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/shops/update-shop-image",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image_id",
+									"value": "166",
+									"type": "text"
+								},
+								{
+									"key": "shop_id",
+									"value": "17",
+									"type": "text"
+								},
+								{
+									"key": "shopimagefile",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/logos/maple.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/shops/update-shop-image",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"shops",
+								"update-shop-image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/shops/update-shop/17",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "bata",
+									"type": "text"
+								},
+								{
+									"key": "contact_number",
+									"value": "8998899889",
+									"type": "text"
+								},
+								{
+									"key": "store_ids",
+									"value": "[4]",
+									"type": "text"
+								},
+								{
+									"key": "category_ids",
+									"value": "[1,3]",
+									"type": "text"
+								},
+								{
+									"key": "shop_logo",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/logos/pvr.png"
+								},
+								{
+									"key": "shop_image",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/logos/uspolo.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/shops/update-shop/17",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"shops",
+								"update-shop",
+								"17"
+							]
+						},
+						"description": "Here 17 is a shop id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/shops/update-shop-status/17",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/shops/update-shop-status/17",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"shops",
+								"update-shop-status",
+								"17"
+							]
+						},
+						"description": "Here 17 is a shop id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/shops/get-shops/2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/shops/get-shops/2",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"shops",
+								"get-shops",
+								"2"
+							]
+						},
+						"description": "Here 2 is a mall_id "
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "screen related apis",
+			"item": [
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/screen/add-screen",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\" : {\n\t\t\"device_unique_id\" : 6,\n\t\t\"mall_id\" : 5,\n\t\t\"device_name\":\"device6\"\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/screen/add-screen",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"screen",
+								"add-screen"
+							]
+						},
+						"description": "send regular json data (raw data with json format) \n\n{\n\t\"data\" : {\n\t\tdevice_unique_id : some unique id,\n\t\tmall_id : mall_id from drop down \n\t}\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/screen/get-all-screens/7",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/screen/get-all-screens/7",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"screen",
+								"get-all-screens",
+								"7"
+							]
+						},
+						"description": "here 7 is a user id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/screen/get-screen-by-mall/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/screen/get-screen-by-mall/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"screen",
+								"get-screen-by-mall",
+								"1"
+							]
+						},
+						"description": "Here 1 is a mall id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/screen/get-screen-by-screen-id/4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/screen/get-screen-by-screen-id/4",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"screen",
+								"get-screen-by-screen-id",
+								"4"
+							]
+						},
+						"description": "Here 4 is a screen id"
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/screen/update-screen-status/4",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/screen/update-screen-status/4",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"screen",
+								"update-screen-status",
+								"4"
+							]
+						},
+						"description": "Here 4 is a screen id"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "device related apis",
+			"item": [
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/device/get-device-data/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/device/get-device-data/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"device",
+								"get-device-data",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/device/get-device-shops",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/device/get-device-shops",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"device",
+								"get-device-shops"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/device/get-device-data-new/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/device/get-device-data-new/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"device",
+								"get-device-data-new",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "amenities related apis",
+			"item": [
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/amenities/get-all-amenities-data/5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/amenities/get-all-amenities-data/5",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"amenities",
+								"get-all-amenities-data",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/amenities/add-amenities",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "amenities_name",
+									"value": "BABY CARE",
+									"type": "text"
+								},
+								{
+									"key": "amenities_path",
+									"type": "file",
+									"src": "/home/vrvembassy2/final fiza/path/ucb.json"
+								},
+								{
+									"key": "floor_id",
+									"value": "18",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/amenities/add-amenities",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"amenities",
+								"add-amenities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/amenities/get-amenities-by-mall-id/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/amenities/get-amenities-by-mall-id/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"amenities",
+								"get-amenities-by-mall-id",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/amenities/get-amenities-by-id/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/amenities/get-amenities-by-id/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"amenities",
+								"get-amenities-by-id",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/amenities/get-amenities/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/amenities/get-amenities/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"amenities",
+								"get-amenities",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/amenities/get-amenities-by-type",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\" : {\n\t\t\"mall_id\" : 1,\n\t\t\"amenities_name\" : \"ATM\"\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/amenities/get-amenities-by-type",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"amenities",
+								"get-amenities-by-type"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{BASE_URL}}/wayfinder-api/amenities/update-amenities-status/1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/wayfinder-api/amenities/update-amenities-status/1",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"wayfinder-api",
+								"amenities",
+								"update-amenities-status",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "df1c6b07-4e23-4fe3-849e-ab266b09eb19",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "77e6e5ad-8ea7-4570-bad2-3fbb4cd0805f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

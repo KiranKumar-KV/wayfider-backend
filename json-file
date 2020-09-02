@@ -1,0 +1,28 @@
+add-role 
+
+data : {
+    name  : '',
+    status : true,
+    createsAt : timestamp,
+    updatedAt : timestamp,
+}
+
+get-role
+
+data : [
+    {
+        id : ,
+        name:'',
+        status : true,
+    },
+    {
+        id : ,
+        name:'',
+        status : true,
+    },
+    {
+        id : ,
+        name:'',
+        status : true,
+    }
+]

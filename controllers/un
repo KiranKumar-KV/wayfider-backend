@@ -1,0 +1,33 @@
+ console.log(req.files.filename)
+        // let postdata = req.body;
+        // let newdata = await dbcontroller.addFloor(postdata);
+        // if(newdata){
+        //     let floor_id = newdata.id;
+        //     let imagetype = 'floor';
+        //     if(req.files.filename.length === 1){
+        //         let newdata1 = await dbcontroller.addImage(floorid,imagetype,filename);
+        //         if(newdata1) {
+        //             return res.status(200).send(newdata1)
+        //         }
+        //     }
+        //     else {
+
+        //     }
+            
+        // }
+
+
+
+        
+        
+        
+   // req.files.filename.map((file) => {
+    //      file.mv(`${FILES_PATH}/${file.name}`, err => {
+    //     if(err){
+    //         console.log(err)
+    //     }
+    //     else{
+    //         console.log('file uploaded')
+    //     }
+    // })
+    // })         
